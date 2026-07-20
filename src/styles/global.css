@@ -1,0 +1,113 @@
+/* ============================================================
+   NEXUS — Sistema de diseño
+   Paleta e identidad tomadas del proyecto real (login, logo):
+   c1 #0F6E56 · c2 #085041 · c3 #1D9E75 · c4 #5DCAA5
+   c5 #9FE1CB · c6 #E1F5EE · c7 #04342C
+   Tipografía: Space Grotesk (display) · Manrope (texto) · IBM Plex Mono (datos/eyebrows)
+   ============================================================ */
+
+:root {
+  --c1: #0F6E56;
+  --c2: #085041;
+  --c3: #1D9E75;
+  --c4: #5DCAA5;
+  --c5: #9FE1CB;
+  --c6: #E1F5EE;
+  --c7: #04342C;
+
+  --paper: #F6FBF8;
+  --paper-2: #EAF4EF;
+  --ink: #08201A;
+  --ink-soft: #345850;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --max-w: 1180px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+html, body, #root { min-height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+img, svg { display: block; max-width: 100%; }
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.section-dark {
+  background: var(--c7);
+  color: var(--c6);
+}
+
+.section-pad {
+  padding: 120px 0;
+}
+
+@media (max-width: 860px) {
+  .section-pad { padding: 76px 0; }
+  .container { padding: 0 20px; }
+}
+
+/* Foco de teclado visible en toda la app */
+:focus-visible {
+  outline: 2px solid var(--c4);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--c3);
+  color: var(--c6);
+}
+
+/* Scrollbar sutil, coherente con la marca */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--c7); }
+::-webkit-scrollbar-thumb { background: var(--c1); border-radius: 8px; }
