@@ -137,6 +137,11 @@ src/
 - Respeta `prefers-reduced-motion` en todas las animaciones (splash, parallax, marquee,
   conteos, watermark).
 
+  ## Autor
+
+**Diego Mendoza Hoyos** — Desarrollador y Diseñador
+Tecnico en Programacion de Software, SENA y Estudiante de Ingeniera de Sistemas — Montería, Colombia
+
 ## Licencia
 
 MIT © Diego Mendoza Hoyos (NEXUS DMH) — ver [LICENSE](./LICENSE).
