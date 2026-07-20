@@ -5,7 +5,7 @@
 ![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-0f6e56)
 
-Landing page **informativa y publicitaria** de NEXUS, plataforma SaaS multi-tenant
+Landing page **informativa** de NEXUS, plataforma SaaS multi-tenant
 pensada para el mercado colombiano (talleres, clínicas, restaurantes, inmobiliarias
 y más sectores, todos sobre un mismo código base).
 
