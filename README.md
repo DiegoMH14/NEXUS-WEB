@@ -14,7 +14,7 @@ y más sectores, todos sobre un mismo código base).
 > la propuesta de valor y permitir que interesados **soliciten una demo** a través del
 > formulario de contacto — el proyecto en sí no se publica aquí por motivos personales.
 
-**🔗 Demo en vivo:** _agrega aquí tu URL de Vercel una vez desplegado_
+**🔗 Demo en vivo:** https://nexus-web-lime.vercel.app/
 
 ## Stack
 
